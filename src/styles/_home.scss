@@ -1,0 +1,32 @@
+.home {
+    &__content {
+        flex-grow: 1;
+        padding: 150px 0 0 0;
+    }
+
+    &__title {
+        color: white;
+        font-size: 80px;
+        line-height: 110%;
+
+        &:nth-of-type(2) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__subtitle {
+        // color: ;
+        font-size: 30px;
+        line-height: 110%;
+
+        &:nth-of-type(2) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__btn {
+        padding: 18px 26px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+}
