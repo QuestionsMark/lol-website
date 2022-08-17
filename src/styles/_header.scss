@@ -1,0 +1,65 @@
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: 50px;
+    height: 70px;
+    background-color: $shadow-color;
+    box-shadow: 0 0 5px 10px $shadow-color;
+}
+
+.logo {
+    &__link {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__brand-name {
+        height: 70px;
+        padding-left: 20px;
+        line-height: 70px;
+        font-weight: normal;
+        cursor: pointer;
+    }
+
+    &__span {
+        color: $blue;
+
+        &:nth-child(2) {
+            color: $font-color;
+            font-weight: bold;
+        }
+    }
+}
+
+.nav {
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+
+    }
+
+    &__link {
+        display: block;
+        height: 70px;
+        padding: 0 10px;
+        color: $font-color;
+        line-height: 70px;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $blue;
+        }
+
+        &.active {
+            color: $blue;
+        }
+    }
+}
