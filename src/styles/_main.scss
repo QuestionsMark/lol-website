@@ -1,0 +1,75 @@
+html {
+    font-family: $font-family;
+    color: $font-color2;
+    scrollbar-color: $blue #101010;
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $blue;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #101010;
+}
+
+body {
+    background: linear-gradient(90deg, $background, $background2, $background);
+}
+
+.app {
+    background-image: url('../assets/nothing.png');
+    background-position: center center;
+    background-size: cover;
+    transition: background-image 0.5s;
+}
+
+.main {
+    width: calc(100% - 40px);
+    max-width: 1500px;
+    padding-top: 70px;
+    margin: 0 auto;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        min-height: calc(100vh - 70px);
+        padding: 20px;
+    }
+
+    &__title {
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        background-color: $purple;
+    }
+
+    &__subtitle {
+        color: $font-color;
+    }
+
+    &__section {
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        background-color: #181818;
+
+        &:nth-last-child(1) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.link {
+    display: block;
+    color: $font-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
