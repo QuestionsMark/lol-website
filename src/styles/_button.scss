@@ -1,0 +1,17 @@
+.btn {
+    display: inline-block;
+    width: fit-content;
+    padding: 10px 16px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: $font-color;
+    background-color: $blue;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: darken($blue, 10%);
+    }
+}
