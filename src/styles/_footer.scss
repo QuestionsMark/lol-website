@@ -1,0 +1,50 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: $shadow-color;
+    box-shadow: 0 0 5px 10px $shadow-color;
+    font-size: 14px;
+
+    &__copyright {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        &-icon {
+            margin-top: -2px;
+            font-size: 16px;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        &-icon {
+            margin-top: -2px;
+            font-size: 16px;
+        }
+    }
+}
+
+.small-logo {
+    font-size: 16px;
+
+    &__link {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__span {
+        color: $blue;
+
+        &:nth-child(2) {
+            color: $font-color;
+            font-weight: bold;
+        }
+    }
+}
