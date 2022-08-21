@@ -1,0 +1,82 @@
+.accounts {
+    &__container {
+        flex-grow: 1;
+        display: flex;
+        gap: 10px;
+    }
+
+    &__filter {
+        flex-basis: 20%;
+        flex-shrink: 0;
+        margin-bottom: 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        &-container {
+            flex-grow: 1;
+            padding: 20px;
+        }
+    }
+
+    &__item {
+        flex-basis: calc(33.33333% - 14px);
+        border-radius: 10px;
+        overflow: hidden;
+
+        &-img-wrapper {
+            position: relative;
+            width: 100%;
+        }
+
+        &-count {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            width: 60px;
+            height: 60px;
+            border-radius: 20px;
+            box-shadow: 0 0 5px 5px rgba(0,0,0,0.7);
+            background-color: rgba(0,0,0,0.7);
+            text-align: center;
+            line-height: 60px;
+            font-size: 24px;
+        }
+
+        &-information {
+            display: flex;
+            flex-direction: column;
+            background-color: #252525;
+
+            &-item {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                border-bottom: 1px solid #101010;
+                font-weight: bold;
+            }
+        }
+
+        &-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            color: $font-color;
+            background-color: $blue;
+            text-decoration: none;
+            font-size: 20px;
+            transition: background-color 0.2s;
+
+            &:hover {
+                background-color: darken($blue, 10%);
+            }
+        }
+
+        &-currency {
+            margin-top: -1px;
+        }
+    }
+}
