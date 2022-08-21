@@ -1,6 +1,7 @@
 .form {
     &__input {
         font-family: $font-family;
+        width: 100%;
         padding: 10px;
         border: none;
         border-bottom: 2px solid darken($blue, 20%);

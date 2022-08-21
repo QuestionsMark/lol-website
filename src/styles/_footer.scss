@@ -1,11 +1,16 @@
 .footer {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 40px 20px;
     background-color: $shadow-color;
     box-shadow: 0 0 5px 10px $shadow-color;
     font-size: 14px;
+
+    @media (min-width: $md-mobile) {
+        flex-direction: row;
+    }
 
     &__copyright {
         display: flex;
