@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { EMAIL } from "../../config";
 
 export const Nav = () => {
     return (
@@ -14,7 +15,7 @@ export const Nav = () => {
                     <NavLink to="/faq" className="nav__link">FAQ</NavLink>
                 </li>
                 <li className="nav__item">
-                    <a href="mailto:info@l9lolsmurfs.com" className="nav__link">Contact</a>
+                    <a href={`mailto:${EMAIL}`} className="nav__link">Contact</a>
                 </li>
             </ul>
         </nav>
