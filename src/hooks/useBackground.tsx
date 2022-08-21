@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
-import background from '../assets/background.jpg';
+import homeBgc from '../assets/background.webp';
+import accountsBgc from '../assets/background3.webp';
 
 export const useBackground = () => {
     const bodyRef = useRef<HTMLElement | null>(null);
@@ -12,10 +13,17 @@ export const useBackground = () => {
 
     useEffect(() => {
         if (!bodyRef.current) return;
-        if (pathname === '/') {
-            bodyRef.current.style.backgroundImage = `url('${background}')`;
-        } else {
-            bodyRef.current.style.backgroundImage = '';
+        switch (pathname) {
+            case '/':
+                bodyRef.current.style.backgroundImage = `url('${homeBgc}')`;
+                break;
+            case '/accounts':
+                bodyRef.current.style.backgroundImage = `url('${accountsBgc}')`;
+                break;
+
+            default:
+                bodyRef.current.style.backgroundImage = '';
+                break;
         }
     }, [bodyRef, pathname]);
 };

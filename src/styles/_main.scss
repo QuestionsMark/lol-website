@@ -23,6 +23,7 @@ body {
 
 .app {
     background-image: url('../assets/nothing.png');
+    background-attachment: fixed;
     background-position: center center;
     background-size: cover;
     transition: background-image 0.5s;
@@ -71,5 +72,31 @@ body {
 
     &:hover {
         text-decoration: underline;
+    }
+}
+
+.img {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    aspect-ratio: 1/1;
+
+    &--natural {
+        aspect-ratio: inherit;
+    }
+
+    &--radius {
+        border-radius: 10px;
+    }
+
+    &--icon {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        width: 60px;
+        border-radius: 20px;
+        background-color: rgba(0,0,0,0.7);
+        box-shadow: 0 0 5px 5px rgba(0,0,0,0.7);
     }
 }

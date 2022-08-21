@@ -1,0 +1,46 @@
+.fade-animation {
+    opacity: 0;
+    animation: fade 1s forwards;
+}
+
+.fade-delay-animation {
+    opacity: 0;
+    animation: fade 1s 0.5s forwards;
+}
+
+.fade-delay2-animation {
+    opacity: 0;
+    animation: fade 1s 1s forwards;
+}
+
+.show-card-animation {
+    transform: rotateZ(-10deg) scale(0.8);
+    animation: show-card 0.3s forwards;
+    @for $i from 1 through 20 {
+        &:nth-of-type(#{$i}n) {
+            animation-delay: #{$i * 0.06 - 0.06}s;
+        }
+    }
+}
+
+.slide-animation {
+    transform: translateX(-30px);
+    animation: slide 0.5s forwards;
+}
+
+@keyframes fade {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes show-card {
+    100% {
+        transform: rotateZ(0) scale(1);
+    }
+}
+@keyframes slide {
+    100% {
+        transform: translateX(0);
+    }
+}

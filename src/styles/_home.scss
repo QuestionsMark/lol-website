@@ -1,8 +1,12 @@
 .home {
     &__content {
         flex-grow: 1;
-        padding: 150px 0 0 0;
+        padding: 150px 0;
     }
+
+    // &__section {
+    //     min-height: calc(100vh - 70px);
+    // }
 
     &__title {
         color: white;
@@ -15,7 +19,6 @@
     }
 
     &__subtitle {
-        // color: ;
         font-size: 30px;
         line-height: 110%;
 
@@ -27,6 +30,25 @@
     &__btn {
         padding: 18px 26px;
         border-radius: 10px;
+        margin-bottom: 150px;
         font-size: 20px;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        padding: 50px 0;
+        opacity: 0;
+
+        &-icon {
+            width: 120px;
+            flex-shrink: 0;
+        }
+
+        &-text {
+            font-size: 30px;
+            line-height: 110%;
+        }
     }
 }
