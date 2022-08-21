@@ -1,0 +1,18 @@
+.form {
+    &__input {
+        font-family: $font-family;
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid darken($blue, 20%);
+        outline: none;
+        color: $font-color;
+        background-color: transparent;
+        font-size: 16px;
+        line-height: 110%;
+        transition: 0.3s;
+
+        &:focus {
+            border-bottom: 2px solid $blue;
+        }
+    }
+}

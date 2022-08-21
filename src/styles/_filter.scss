@@ -1,0 +1,36 @@
+.filter {
+    &__section {
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        background-color: #101010;
+
+        &--flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    }
+
+    &__title {
+        flex-basis: 100%;
+        // text-align: center;
+    }
+
+    &__brick {
+        padding: 4px 10px;
+        border-radius: 6px;
+        background-color: darken($blue, 20%);
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.2s;
+
+        &.active {
+            background-color: $blue;
+        }
+
+        &:hover {
+            background-color: $blue;
+        }
+    }
+}
