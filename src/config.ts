@@ -129,7 +129,7 @@ export const ACCOUNTS: Account[] = [
 
 export const QUESTIONS: FAQ[] = [
     {
-        answer: 'A Smurf is a fresh lvl 3 League of Legends Account, with no ranked games played on it. It has n Champions boughtand the chosen by you amount of Blue Essence (BE).',
+        answer: 'A Smurf is a fresh lvl 30 League of Legends Account, with no ranked games played on it. It has no Champions bought and the chosen by you amount of Blue Essence (BE).',
         question: 'What is a Smurf?',
     },
     {
